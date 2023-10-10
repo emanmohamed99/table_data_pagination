@@ -1,0 +1,31 @@
+.field {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  table {
+    width: 100%;
+    margin: 2px auto;
+    table-layout: auto;
+    color: $sonicSilver;
+    background-color: $white;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left;
+    tr th,
+    td {
+      padding: 10px;
+      border: 1px solid $lightGray;
+    }
+  }
+  .bottom-field {
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+}
+.none {
+  display: none;
+}
+.visible {
+  visibility: hidden;
+}

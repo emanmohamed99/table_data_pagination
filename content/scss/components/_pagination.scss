@@ -1,0 +1,33 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  li {
+    list-style: none;
+    padding: 2px;
+    margin: 10px;
+    flex-shrink: 0;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid $spanishGray;
+
+    &:focus {
+      background: $eucalyptus;
+      color: white;
+      border-color: $eucalyptus;
+    }
+    a {
+      text-decoration: none;
+      padding: 3px 8px;
+      color: inherit;
+      display: block;
+      font-family: sans-serif;
+      font-size: 13px;
+    }
+  }
+}
+li.active {
+  background: #32d6aa;
+  color: white;
+  border-color: #32d6aa;
+}

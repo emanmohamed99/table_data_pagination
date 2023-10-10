@@ -1,0 +1,20 @@
+$colors-map: (
+  "spanishGray": $spanishGray,
+  "eucalyptus": $eucalyptus,
+  "white": $white,
+  "aeroBlue": $aeroBlue,
+  "sonicSilver": $sonicSilver,
+  "transparent": $transparent,
+  "lightGray": $lightGray,
+);
+
+// @each Sass loop to generate classes
+@each $name, $hex-value in $colors-map {
+  .#{$name} {
+    color: $hex-value;
+  }
+
+  .#{$name}-bg {
+    background-color: $hex-value;
+  }
+}
